@@ -4,6 +4,8 @@ import flare1 from "../art/flares/flare1.png";
 import flare2 from "../art/flares/flare2.png";
 import flare3 from "../art/flares/flare3.png";
 
+import Map from "./Map";
+
 export default function Locations() {
   const cities = [
     "Boston, MA",
@@ -28,6 +30,12 @@ export default function Locations() {
           {cities.map((city) => (
             <p className="lg:odd:text-left lg:even:text-right">{city}</p>
           ))}
+        </div>
+      </div>
+
+      <div className="flex justify-center text-center text-2xl space-y-2 my-20">
+        <div className="border-4 border-dashed border-pink py-6 px-6 neuebit tracking-wider text-4xl max-w-5xl w-full">
+          <Map />
         </div>
       </div>
 
